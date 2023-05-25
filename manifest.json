@@ -1,0 +1,13 @@
+{
+  "name": "Hacker news fix your webiste",
+  "description": "Are you sick from the hacker news website not opening links in a new tab? This is for you",
+  "version": "1.0",
+  "manifest_version": 3,
+  "author": "Stoyko Tolev",
+  "content_scripts": [
+    {
+      "matches": ["https://news.ycombinator.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
